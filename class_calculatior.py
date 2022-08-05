@@ -1,10 +1,11 @@
 class Calculator:
     def __init__(self,x,y):
-        self.x=x;
-        self.y=y;
+        self.x=x
+        self.y=y
     def plus(self):
-        return x+y;
+        xx = x+y
+        print(xx)
 
 
 obje = Calculator(10,20)
-print(obje.plus)
+obje.plus
