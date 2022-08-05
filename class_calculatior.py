@@ -1,5 +1,7 @@
 class Calculator:
-    def __init__(self):
+    def __init__(self,x,y):
+        self.x=x;
+        self.y=y;
 
 
-obje = Calculator()
+obje = Calculator(10,20)
