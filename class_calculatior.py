@@ -4,10 +4,8 @@ class Calculator:
         self.x=x
         self.y=y
 
-    def plus(self):
-        xx = x+y
-        print(xx)
+    def plus(self,x,y):
+        return x +y
 
-
-obje = Calculator(10,20)
-obje.plus(5,4)
+obje = Calculator()
+obje.plus(10,20)
