@@ -5,6 +5,8 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head=None
-first = Node(3)
-print(first.data)
-print(first.next)
+#first = Node(3)
+ll = LinkedList()
+ll.head=Node(3)
+print(ll.data)
+print(ll.next)
