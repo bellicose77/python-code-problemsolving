@@ -1,6 +1,6 @@
 t = int(input())
 i=0
-while i<t:
+while t!=0:
     n=int(input())
     print(n)
-    i+=1
+    t-=1
