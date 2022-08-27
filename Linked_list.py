@@ -8,5 +8,5 @@ class LinkedList:
 #first = Node(3)
 ll = LinkedList()
 ll.head=Node(3)
-print(ll.data)
-print(ll.next)
+print(ll.head.data)
+#print(ll.next)
