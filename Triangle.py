@@ -3,3 +3,4 @@ class Triangle:
     self.left=a
     self.right=b
     self.height=c
+triangleOne = Triangle(5,6,7)
