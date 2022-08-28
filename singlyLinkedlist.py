@@ -1,12 +1,12 @@
-node = int(input("Enter number of node: "))
+#node = int(input("Enter number of node: "))
 class Node:
     def __init__(self,data,next=None):
         self.data=data
         self.next=next
 
 class LinkedList:
-    def __init__(self):
-        self.head=None
+    def __init__(self,next=None):
+        self.head=next
     def printLinked(self):
         if self.head is None:
             print("Empty linked list")
@@ -16,7 +16,7 @@ class LinkedList:
                 print(n.data)
  
                 n=n.next
-ll1 = LinkedList()
+ll1 = LinkedList(3)
 ll1.printLinked()
 # while node!=0:
 #     value = input()
