@@ -4,4 +4,4 @@ class Node:
         self.next=next
 
 headnode = Node(3)
-print(headnode.data)
+print(headnode.next)
