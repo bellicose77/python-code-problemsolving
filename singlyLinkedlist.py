@@ -14,9 +14,12 @@ class LinkedList:
             n=self.head
             while n is not None:
                 print(n.data)
+ 
                 n=n.next
-while node!=0:
-    value = input()
-    headnode = Node(value)
-    node-=1
-    print(headnode.data)
+ll1 = LinkedList()
+ll1.printLinked()
+# while node!=0:
+#     value = input()
+#     headnode = Node(value)
+#     node-=1
+#     print(headnode.data)
