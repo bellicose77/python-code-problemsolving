@@ -10,6 +10,11 @@ class LinkedList:
     def printLinked(self):
         if self.head is None:
             print("Empty linked list")
+        else :
+            n=self.head
+            while n is not None:
+                print(n.data)
+                n=n.next
 while node!=0:
     value = input()
     headnode = Node(value)
