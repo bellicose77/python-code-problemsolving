@@ -5,6 +5,9 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head=None
+    def print_list(self):
+        if self.head==None:
+            print("Emptly linked list")
     def add_begin(self,data):
         new_node=Node(data)
         new_node.next=self.head
