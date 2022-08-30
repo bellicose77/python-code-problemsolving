@@ -29,7 +29,8 @@ class LinkedList:
             self.tail.next=new_node
             self.tail=new_node
 
-values=[10,20,30,40]       
+#values=[10,20,30,40]   
+values=[1,1,2,3,3]    
 ll1=LinkedList()
 for x in values:
     #ll1.add_begin(x)
