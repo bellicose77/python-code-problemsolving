@@ -11,7 +11,7 @@ class LinkedList:
             print("Emptly linked list")
         n=self.head
         while n is not None:
-            print(n.data)
+            print(n.data,"-->",end=" ")
             n=n.next
     def add_begin(self,data):
         new_node=Node(data)
