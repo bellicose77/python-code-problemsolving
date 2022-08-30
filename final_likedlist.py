@@ -19,9 +19,9 @@ class LinkedList:
         self.head=new_node
     def add_end(self,data):
         new_node = Node(data)
-        print("comming to data",new_node.data)
+       # print("comming to data",new_node.data)
         if self.head==None:
-            print("coming in if ",new_node.data)
+           # print("coming in if ",new_node.data)
             self.head=new_node
             self.tail=new_node
 
@@ -32,5 +32,6 @@ class LinkedList:
 values=[10,20,30,40]       
 ll1=LinkedList()
 for x in values:
-    ll1.add_begin(x)
+    #ll1.add_begin(x)
+    ll1.add_end(x)
 ll1.print_list()
