@@ -30,10 +30,11 @@ class LinkedList:
             self.tail=new_node
 
     def delete_end(self):
-        self.temp=None
+        
         if self.head==None:
             print("There is no Node")
         else:
+            self.temp=None
             n=self.head
             while n.next!=None:
                 self.temp=n
@@ -41,7 +42,13 @@ class LinkedList:
             self.temp.next=None
     
     def delete_begin(self):
-        
+        if self.head==None:
+            print("There is nothing to delete at first")
+        else:
+            #print("There are many node to delete")
+            n=self.head
+            self.head=n.next
+
 
 #values=[10,20,30,40]   
 values=[1,1,2,3,3]    
@@ -49,6 +56,8 @@ ll1=LinkedList()
 for x in values:
     #ll1.add_begin(x)
     ll1.add_end(x)
-ll1.delete_end()
-ll1.delete_end()
+#ll1.delete_end()
+#ll1.delete_end()
+ll1.delete_begin()
+ll1.delete_begin()
 ll1.print_list()
