@@ -34,7 +34,9 @@ class LinkedList:
         if self.head==None:
             print("There is no Node")
         else:
-            print("There are many nodes for deleting")  
+            n=self.head
+            if(n.next!=None):
+                  
 
 #values=[10,20,30,40]   
 values=[1,1,2,3,3]    
