@@ -54,6 +54,7 @@ class LinkedList:
         while n.next is not None:
             x=n.next
             n.data==x.data
+            print(n.data,"--->",x.data)
 
 #values=[10,20,30,40]   
 values=[1,1,1,2,3,3]    
@@ -63,6 +64,7 @@ for x in values:
     ll1.add_end(x)
 #ll1.delete_end()
 #ll1.delete_end()
-ll1.delete_begin()
-ll1.delete_begin()
+# ll1.delete_begin()
+# ll1.delete_begin()
+ll1.delete_duplicated_node()
 ll1.print_list()
