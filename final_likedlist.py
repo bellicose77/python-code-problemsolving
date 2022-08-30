@@ -30,7 +30,10 @@ class LinkedList:
             self.tail=new_node
 
     def delete_end(self):
-        pass  
+        if self.head==None:
+            print("There is no Node")
+        else:
+            print("There are many nodes for deleting")  
 
 #values=[10,20,30,40]   
 values=[1,1,2,3,3]    
