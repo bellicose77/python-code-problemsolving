@@ -5,6 +5,7 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head=None
+        self.tail=None
     def print_list(self):
         if self.head==None:
             print("Emptly linked list")
@@ -18,17 +19,18 @@ class LinkedList:
         self.head=new_node
     def add_end(self,data):
         new_node = Node(data)
+        print("comming to data",new_node.data)
         if self.head==None:
+            print("coming in if ",new_node.data)
             self.head=new_node
+            self.tail=new_node
+
         else:
-            n=self.head.next
-            while n==None:
-                self.head.next=new_node
+            self.tail.next=new_node
+            self.tail=new_node
+
+values=[10,20,30,40]       
 ll1=LinkedList()
-# ll1.add_begin(5)
-# ll1.add_begin(10)
-# ll1.add_begin(15)
-ll1.add_end(5)
-ll1.add_end(10)
-ll1.add_end(15)
+for x in values:
+    ll1.add_begin(x)
 ll1.print_list()
