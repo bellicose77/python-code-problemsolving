@@ -29,6 +29,9 @@ class LinkedList:
             self.tail.next=new_node
             self.tail=new_node
 
+    def delete_end(self):
+        pass  
+
 #values=[10,20,30,40]   
 values=[1,1,2,3,3]    
 ll1=LinkedList()
