@@ -48,10 +48,15 @@ class LinkedList:
             #print("There are many node to delete")
             n=self.head
             self.head=n.next
-
+    
+    def delete_duplicated_node(self):
+        n=self.head
+        while n.next is not None:
+            x=n.next
+            n.data==x.data
 
 #values=[10,20,30,40]   
-values=[1,1,2,3,3]    
+values=[1,1,1,2,3,3]    
 ll1=LinkedList()
 for x in values:
     #ll1.add_begin(x)
