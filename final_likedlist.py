@@ -39,7 +39,9 @@ class LinkedList:
                 self.temp=n
                 n=n.next
             self.temp.next=None
-
+    
+    def delete_begin(self):
+        
 
 #values=[10,20,30,40]   
 values=[1,1,2,3,3]    
