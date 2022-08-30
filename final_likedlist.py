@@ -30,6 +30,7 @@ class LinkedList:
             self.tail=new_node
 
     def delete_end(self):
+        self.temp=None
         if self.head==None:
             print("There is no Node")
         else:
@@ -41,4 +42,5 @@ ll1=LinkedList()
 for x in values:
     #ll1.add_begin(x)
     ll1.add_end(x)
+ll1.delete_end()
 ll1.print_list()
