@@ -35,8 +35,11 @@ class LinkedList:
             print("There is no Node")
         else:
             n=self.head
-            if(n.next!=None):
-                  
+            while n.next!=None:
+                self.temp=n
+                n=n.next
+            self.temp.next=None
+
 
 #values=[10,20,30,40]   
 values=[1,1,2,3,3]    
@@ -44,5 +47,6 @@ ll1=LinkedList()
 for x in values:
     #ll1.add_begin(x)
     ll1.add_end(x)
+ll1.delete_end()
 ll1.delete_end()
 ll1.print_list()
