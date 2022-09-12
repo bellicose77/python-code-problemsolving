@@ -51,11 +51,14 @@ class LinkedList:
     
     def delete_duplicated_node(self):
         n=self.head
-        while n.next is not None:
+        while n.next !=None:
             x=n.next
-            n.data==x.data
-            print(n.data,"--->",x.data)
-
+            if n.data==x.data:
+                n.next=x.next
+                print(n.data,"--->",x.data)
+        n=n.next
+                
+ 
 #values=[10,20,30,40]   
 values=[1,1,1,2,3,3]    
 ll1=LinkedList()
