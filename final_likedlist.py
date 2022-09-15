@@ -17,8 +17,20 @@ class LinkedList:
         new_node=Node(data)
         new_node.next=self.head
         self.head=new_node
-    def add_after_node(self,data):
+    def add_after_node(self,data,x):
         new_node = Node(data)
+        if(self.head=='None'):
+            print("NOde is empty")
+        else:
+            n=self.head
+            self.x=1
+            c=self.x
+            while(c!=x):
+                n=n.next
+                c+=1
+            self.temp=n.next
+            n.next=new_node
+            new_node.next=self.temp
     def add_end(self,data):
         new_node = Node(data)
        # print("comming to data",new_node.data)
@@ -50,6 +62,21 @@ class LinkedList:
             #print("There are many node to delete")
             n=self.head
             self.head=n.next
+    def delete_at_any_position(self,y):
+        if self.head == None:
+            print("There is nothing")
+        else:
+            n=self.head
+            self.x=1
+            c=self.x
+            self.p=0
+            while c!=y:
+                self.p=n
+                n=n.next
+                c+=1
+            self.t=n.next
+            self.p.next=self.t
+
     
     def delete_duplicated_node(self):
         n=self.head
@@ -62,11 +89,13 @@ class LinkedList:
                 
  
 #values=[10,20,30,40]   
-values=[1,1,1,2,3,3]    
+values=[10,20,30,40,50]    
 ll1=LinkedList()
 for x in values:
     #ll1.add_begin(x)
     ll1.add_end(x)
+#ll1.add_after_node(50,3)
+ll1.delete_at_any_position(3)
 #ll1.delete_end()
 #ll1.delete_end()
 # ll1.delete_begin()
