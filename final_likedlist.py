@@ -17,6 +17,8 @@ class LinkedList:
         new_node=Node(data)
         new_node.next=self.head
         self.head=new_node
+    def add_after_node(self,data):
+        new_node = Node(data)
     def add_end(self,data):
         new_node = Node(data)
        # print("comming to data",new_node.data)
@@ -69,5 +71,5 @@ for x in values:
 #ll1.delete_end()
 # ll1.delete_begin()
 # ll1.delete_begin()
-ll1.delete_duplicated_node()
+#ll1.delete_duplicated_node()
 ll1.print_list()
