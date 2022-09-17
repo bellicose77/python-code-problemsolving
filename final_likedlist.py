@@ -89,13 +89,13 @@ class LinkedList:
                 
  
 #values=[10,20,30,40]   
-values=[10,20,30,40,50]    
+values=[10,10,10,20,20,30,40,40]    
 ll1=LinkedList()
 for x in values:
     #ll1.add_begin(x)
     ll1.add_end(x)
 #ll1.add_after_node(50,3)
-ll1.delete_at_any_position(3)
+#ll1.delete_at_any_position(3)
 #ll1.delete_end()
 #ll1.delete_end()
 # ll1.delete_begin()
