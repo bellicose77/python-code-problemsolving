@@ -80,18 +80,24 @@ class LinkedList:
     
     def delete_duplicated_node(self):
         n=self.head
-        while n.next !=None:
+        while n.next is not None:
             
             self.x=n.next
             temp=self.x
             #print("temp value before loop",temp.data)
             
-            while temp.next !=None:
+            while temp.next is not None:
                 #print("is there infite")
                 if(n.data==temp.data):
                     n.next=temp.next
                 temp=temp.next
-            
+            #print("ne=>",n.data)
+            #print("te=>",temp.data)
+            if(n.data==temp.data):
+                print("yes")
+                print(n.next,"->",temp.next)
+                n.next=temp.next
+           
             n=n.next
                 
  
