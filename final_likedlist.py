@@ -81,11 +81,18 @@ class LinkedList:
     def delete_duplicated_node(self):
         n=self.head
         while n.next !=None:
-            x=n.next
-            if n.data==x.data:
-                n.next=x.next
-                print(n.data,"--->",x.data)
-        n=n.next
+            
+            self.x=n.next
+            temp=self.x
+            #print("temp value before loop",temp.data)
+            
+            while temp.next !=None:
+                #print("is there infite")
+                if(n.data==temp.data):
+                    n.next=temp.next
+                temp=temp.next
+            
+            n=n.next
                 
  
 #values=[10,20,30,40]   
@@ -100,5 +107,5 @@ for x in values:
 #ll1.delete_end()
 # ll1.delete_begin()
 # ll1.delete_begin()
-#ll1.delete_duplicated_node()
+ll1.delete_duplicated_node()
 ll1.print_list()
