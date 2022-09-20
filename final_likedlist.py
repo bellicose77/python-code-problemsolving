@@ -77,7 +77,7 @@ class LinkedList:
             self.t=n.next
             self.p.next=self.t
 
-    
+    '''
     def delete_duplicated_node(self):
         n=self.head
         while n.next is not None:
@@ -92,13 +92,24 @@ class LinkedList:
                     n.next=temp.next
                 temp=temp.next
             #print("ne=>",n.data)
-            #print("te=>",temp.data)
-            if(n.data==temp.data):
-                print("yes")
-                print(n.next,"->",temp.next)
-                n.next=temp.next
+            else:
+
+
+                
            
             n=n.next
+            '''
+    def remove_duplicate(self):
+        n=self.head
+        if n ==None:
+            print("Empty linkedlist")
+        else:
+            while n.next is not None:
+                if(n.data==n.next.data):
+                    new = n.next.next
+                    n.next=new
+                else:
+                    n=n.next
                 
  
 #values=[10,20,30,40]   
