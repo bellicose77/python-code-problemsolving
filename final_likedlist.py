@@ -99,7 +99,7 @@ class LinkedList:
            
             n=n.next
             '''
-    def remove_duplicate(self):
+    def delete_duplicated_node(self):
         n=self.head
         if n ==None:
             print("Empty linkedlist")
