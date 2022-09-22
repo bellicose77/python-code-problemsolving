@@ -110,6 +110,8 @@ class LinkedList:
                     n.next=new
                 else:
                     n=n.next
+    def delete_every_duplicate(self):
+        
                 
  
 #values=[10,20,30,40]   
