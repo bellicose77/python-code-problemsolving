@@ -111,7 +111,10 @@ class LinkedList:
                 else:
                     n=n.next
     def delete_every_duplicate(self):
-        
+        n=self.head
+        if n==None:
+            print("Empty linked")
+
                 
  
 #values=[10,20,30,40]   
