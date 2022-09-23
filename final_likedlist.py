@@ -114,11 +114,29 @@ class LinkedList:
         n=self.head
         if n==None:
             print("Empty linked")
+        else:
+            self.pre=n
+            while n.next is not None:
+                
+                if(n.data==n.next.data):
+                    #print('something',n.data)
+                    #print('something next',n.next.data)
+                    new=n.next.next
+                    #self.pre.next=new
+                    #n=self.pre.next
+                    n.next=new
+                    #print(self.pre.next.data)
+                   
+                else:
+                     self.pre=n
+                     n=n.next
+                     
+                   
 
                 
  
 #values=[10,20,30,40]   
-values=[10,10,10,20,20,30,40,40]    
+values=[2,2,3,3,4,4,6,5]    
 ll1=LinkedList()
 for x in values:
     #ll1.add_begin(x)
@@ -129,5 +147,6 @@ for x in values:
 #ll1.delete_end()
 # ll1.delete_begin()
 # ll1.delete_begin()
-ll1.delete_duplicated_node()
+#ll1.delete_duplicated_node()
+ll1.delete_every_duplicate()
 ll1.print_list()
