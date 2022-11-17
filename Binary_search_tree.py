@@ -10,3 +10,5 @@ class Tree:
         pass
     def print_tree(self):
         pass
+n1 = TreeNode(5)
+print(n1)
