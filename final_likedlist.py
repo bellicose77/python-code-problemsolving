@@ -131,10 +131,6 @@ class LinkedList:
                      self.pre=n
                      n=n.next
                      
-                   
-
-                
- 
 #values=[10,20,30,40]   
 values=[2,2,3,3,4,4,6,5]    
 ll1=LinkedList()
