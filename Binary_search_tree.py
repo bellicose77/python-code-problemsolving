@@ -5,10 +5,13 @@ class TreeNode:
         self.right=None
 class Tree:
     def __init__(self):
-        self.root=None
+        self.root=
     def insert_node(self,data):
         n=TreeNode(data)
     def print_tree(self):
         pass
-n1 = TreeNode(5)
+    def build_tree():
+        pass
+n1 = Tree
+n1.build_tree
 print(n1.data)
