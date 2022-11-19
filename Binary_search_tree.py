@@ -17,10 +17,13 @@ class Tree:
         #print(previous_node)
         while current_node:
             previous_node=current_node
+            print("previous_node",previous_node)
             if data < current_node.data:
                 current_node=current_node.left
+                print("prevous node value in if",previous_node)
             else :
                 current_node=current_node.right
+                print("prevous node in if",previous_node)
         if data <previous_node.data:
             previous_node.left=TreeNode(data)
         else:
@@ -30,7 +33,7 @@ class Tree:
     def print_tree(self):
         pass
     def build_tree(self):
-        for x in [7, 6, 8, 5, 9, 2, 12, 3]:
+        for x in [7, 6, 8, 5]:
             self.insert_node(x)
 n1 = Tree()
 n1.build_tree()
