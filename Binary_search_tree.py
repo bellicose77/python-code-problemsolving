@@ -11,7 +11,8 @@ class Tree:
         if self.root is None:
             self.root = TreeNode(data)
             return 
-        temp=self.root
+        current_node=self.root
+        previous_node = None
 
     def print_tree(self):
         pass
