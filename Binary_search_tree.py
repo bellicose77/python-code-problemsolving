@@ -20,11 +20,12 @@ class Tree:
             print("previous_node",previous_node)
             if data < current_node.data:
                 current_node=current_node.left
-                print("prevous node value in if",previous_node)
+                #print("prevous node value in if",current_node,previous_node,data)
             else :
                 current_node=current_node.right
-                print("prevous node in if",previous_node)
+                #print("prevous node in if",current_node,previous_node,data)
         if data <previous_node.data:
+            print("previous node data ",previous_node.data)
             previous_node.left=TreeNode(data)
         else:
             previous_node.right = TreeNode(data)
