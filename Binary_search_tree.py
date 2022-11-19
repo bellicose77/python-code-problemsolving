@@ -8,12 +8,16 @@ class Tree:
         self.root=None
 
     def insert_node(self,data):
-        if root is None:
-            
+        if self.root is None:
+            self.root = TreeNode(data)
+            return 
+        temp=self.root
+
     def print_tree(self):
         pass
-    def build_tree():
-        pass
+    def build_tree(self):
+        for x in [7, 6, 8, 5, 9, 2, 12, 3]:
+            self.insert_node(x)
 n1 = Tree
 n1.build_tree
 print(n1.data)
