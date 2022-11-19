@@ -5,9 +5,11 @@ class TreeNode:
         self.right=None
 class Tree:
     def __init__(self):
-        self.root=
+        self.root=None
+
     def insert_node(self,data):
-        n=TreeNode(data)
+        if root is None:
+            
     def print_tree(self):
         pass
     def build_tree():
