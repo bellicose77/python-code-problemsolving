@@ -18,6 +18,12 @@ class BST:
                 else:
                     temp.left=TreeNode(data)
                     break
+            else:
+                if temp.right:
+                    temp=temp.right
+                else:
+                    temp.right=TreeNode(data)
+                    break
 
     def build_bst(self):
         for x in [7,6,8,3,5]:
