@@ -12,7 +12,13 @@ class BST:
             return
         temp=self.root
         while True:
-            
+            if temp.data > data:
+                if temp.left:
+                    temp=temp.left
+                else:
+                    temp.left=TreeNode(data)
+                    break
+
     def build_bst(self):
         for x in [7,6,8,3,5]:
             self.insert_node(x)
