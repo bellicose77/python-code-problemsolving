@@ -24,10 +24,13 @@ class BST:
                 else:
                     temp.right=TreeNode(data)
                     break
+    def traverse_node(self,root):
+        self.stack =[]
+        self.temp=root
 
     def build_bst(self):
         for x in [7,6,8,3,5]:
             self.insert_node(x)
-n1=TreeNode()
-n1.BST()
+n1=BST()
+n1.build_bst()
 
